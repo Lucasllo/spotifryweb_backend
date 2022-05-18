@@ -380,14 +380,11 @@ server.get('/usuario', (req, res) =>{
 })
 
 server.post('/usuario', (req, res) =>{
-    const {usuario} = req.body;
+    const usuario = req.body;
     usuarios.push(usuario);
     return res.json(usuarios)
 })
 
-// server.patch('usuario/:id', (req, res)=>{
-//
-6
-// })
+
 
 server.listen(3001);
