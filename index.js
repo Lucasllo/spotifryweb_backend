@@ -400,6 +400,7 @@ server.post('/usuario', (req, res) => {
   return res.json(usuarios)
 })
 
+<<<<<<< HEAD
 server.post('/playlist', (req, res) => {
   const playlist = req.body;
   playlists.push(playlist);
@@ -408,5 +409,14 @@ server.post('/playlist', (req, res) => {
 
 
 
+=======
+server.post('/usuario', (req, res) =>{
+    const usuario = req.body;
+    usuarios.push(usuario);
+    return res.json(usuarios)
+})
+
+
+>>>>>>> dbec984525a144b028af4762b7d1acf6cd942b17
 
 server.listen(3001);
